@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,8 +33,15 @@ body {
 h1 {
   text-align: center; /* Centre le texte */
   margin-top: 0; /* Supprime l’espace au-dessus */
-  padding-top: 20px; /* Ajoute un petit espace sous le titre */
+  padding-top: 10px; /* Ajoute un petit espace sous le titre */
   font-size: 3.2em;
+  line-height: 1.1;
+}
+h2 {
+  text-align: center; /* Centre le texte */
+  margin-top: 0; /* Supprime l’espace au-dessus */
+  padding-top: 5px; /* Ajoute un petit espace sous le titre */
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
@@ -77,19 +84,19 @@ button:focus-visible {
 }
 
 .project-card {
-  width: 30%; /* Ajuste pour bien répartir les images */
+  width: 25%; /* Ajuste pour bien répartir les images */
   text-align: center;
 }
 
 .project-card img {
-  max-width: 100%; /* Empêche les images d'être trop grandes */
+  max-width: 90%; /* Empêche les images d'être trop grandes */
   height: auto; /* Conserve les proportions */
   border-radius: 8px; /* Petit arrondi pour un look sympa */
 }
 .project-description {
   font-size: 16px;
   color: white;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .github-link {
   display: inline-block;
@@ -103,4 +110,41 @@ button:focus-visible {
 .github-link:hover {
   color: #0056b3;
   text-decoration: underline;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  background: brown;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+.contactme {
+  display: flex;
+  background: burlywood;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 120px;
+  width: 50%;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  border-radius: 8px;
+  gap: 10px;
+}
+.sectionContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

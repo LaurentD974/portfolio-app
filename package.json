@@ -7,11 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs": "jsdoc -c jsdoc.conf.json"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@emailjs/browser": "^4.4.1",
+    "better-docs": "^2.7.3",
+    "emailjs-com": "^3.2.0",
+    "jsdoc": "^4.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
